@@ -17,8 +17,8 @@ jobs:
         chmod +x compile-with-docker.sh
         ./compile-with-docker.sh Fusion
  
-     - name: Upload firmware artifact
-       uses: actions/upload-artifact@v4
-       with:
-         name: firmware-artifact
-         path: build/**/*.bin
+    - name: Upload firmware artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: firmware-artifact
+        path: build/**/*.bin
